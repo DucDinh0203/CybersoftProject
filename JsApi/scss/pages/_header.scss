@@ -1,0 +1,48 @@
+.header {
+    margin-bottom: 10px;
+    .container{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        
+        .logo{
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: $text-bold;
+            color: $c3;
+        }
+
+        .navbar{
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: $text-semibold;
+                color: $c1;
+                margin-left: 20px;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $c3;
+                    transform: scale(0, 1);
+                    transition: all 0.4s;
+                }
+
+                &:hover::after{
+                    transform: scale(1,1);
+                }
+
+                a:hover{
+                    color: $c3;
+                }
+            }
+        }
+    }
+
+}

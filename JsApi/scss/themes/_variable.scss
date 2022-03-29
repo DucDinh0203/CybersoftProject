@@ -1,0 +1,17 @@
+$c1: white;
+$c2: black;
+$c3: #00ff80;
+
+
+$text-light: 300;
+$text-normal: 400;
+$text-semibold: 500;
+$text-bold: 700;
+$text-bolder: 900;
+
+
+@mixin text($fs, $fw, $fc){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+}
