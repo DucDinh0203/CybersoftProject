@@ -8,10 +8,3 @@ $text-normal: 400;
 $text-semibold: 500;
 $text-bold: 700;
 $text-bolder: 900;
-
-
-@mixin text($fs, $fw, $fc){
-    font-size: $fs;
-    font-weight: $fw;
-    color: $fc;
-}
