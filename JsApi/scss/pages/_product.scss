@@ -31,15 +31,20 @@
 
                 .action{
                     padding: 0px 10px;
-                    .btn-cart{
-                        
-                        width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .btn{
+                        width: 30%;
                         height: 30px;
+                        margin: 0px 5px;
                         background-color: $c3;
-                        border: none;
+                        border: 1px solid $c2;
                         border-radius: 8px;
                         margin-bottom: 10px;
                         font-size: 18px;
+                        font-weight: $text-bold;
+                        color: $c1;
+                        letter-spacing: 1px;
                         &:hover{
                             cursor: pointer;
                         }
