@@ -13,8 +13,8 @@ const renderProduct = async () => {
             return new Product(
                 product.id,
                 product.name,
-                product.description,
                 product.price,
+                product.description,
                 product.image,
                 product.image
             );
@@ -123,6 +123,7 @@ document.getElementById("btn-addProduct").addEventListener("click", function () 
     })
       .then(function (res) {
         console.log("created", res);
+        renderProduct();
       })
       .catch(function (err) {
         console.log("created err", err);
