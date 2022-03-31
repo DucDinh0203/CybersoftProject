@@ -77,7 +77,7 @@ const renderPlaceYourOrder = () => {
     console.log(totalPrice);
     document.querySelector(".paid").innerHTML = `<p>Total</p>
     <span>${totalPrice}$</span>
-    <button>Thanh Toán</button>`;
+    <button>Place your order</button>`;
 };
 
 const removeItem = (id) =>{
@@ -138,7 +138,7 @@ function deleteProduct(id) {
       .then(function (res) {
         console.log("delete", res);
         cart = cart.filter((item) => item.id != id);
-        updateCart();
+        // updateCart();
         renderProduct();
       })
       .catch(function (err) {
