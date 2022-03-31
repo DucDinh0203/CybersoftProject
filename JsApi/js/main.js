@@ -139,6 +139,7 @@ function deleteProduct(id) {
         console.log("delete", res);
         cart = cart.filter((item) => item.id != id);
         updateCart();
+        renderProduct();
       })
       .catch(function (err) {
         console.log("delete err", err);
@@ -160,7 +161,7 @@ function editProduct(id) {
     idUpdateProduct = id;
     $("#myModal").modal("show");
     axios({
-      url: `${BASE_URL}/cyber/${id}`,
+      url: `${BASE_URL}/cybershop/${id}`,
       method: "GET",
     })
       .then(function (res) {
