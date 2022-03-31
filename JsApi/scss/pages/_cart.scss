@@ -1,0 +1,34 @@
+.cartting{
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    table{
+        width: 100%;
+        border-top: 1px solid $c2;
+        border-bottom: 1px solid $c2;;
+        border-collapse: collapse;
+        font-size: 20px;
+        thead {
+            border-bottom: 1px solid black;
+      
+            th {
+              width: 20%;
+              padding: 10px;
+            }
+        }
+        tbody {
+            td {
+              text-align: center;
+              width: 20%;
+              padding: 10px;
+      
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+    }
+}

@@ -1,0 +1,30 @@
+.checkout {
+    
+    .container {
+        position: relative;
+        margin-top: 50px;
+        
+        .paid {
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: $text-bold;
+            margin-bottom: 20px;
+            span {
+                margin-left: 100px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 20px;
+                margin-left: 100px;
+                background-color: $c3;
+                color: $c1;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+  
