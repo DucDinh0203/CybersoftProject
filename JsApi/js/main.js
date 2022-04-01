@@ -16,7 +16,7 @@ const renderProduct = async () => {
                 product.price,
                 product.description,
                 product.image,
-                product.image
+                product.type
             );
         });
         productList = listOfProducts;
@@ -76,7 +76,7 @@ const renderPlaceYourOrder = () => {
     });
     console.log(totalPrice);
     document.querySelector(".paid").innerHTML = `<p>Total</p>
-    <span>${totalPrice}$</span>
+    <span>$${totalPrice}</span>
     <button>Place your order</button>`;
 };
 

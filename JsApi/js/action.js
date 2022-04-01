@@ -4,11 +4,16 @@ export const renderProducts = (products) => {
         `<div class="box">
             <div class="item">
                 <img src="${product.image}"/>
-                <p>${product.name}</p>
-                <p>${product.price}</p>
-                <button class="bttn btn-cart onclick="addToCart(${product.id})">cart</button>
-                <button class="bttn btn-edit onclick="editProduct(${product.id})">edit</button>
-                <button class="bttn btn-del onclick="deleteProduct(${product.id})">delete</button>  
+                <div class="content">
+                    <p>${product.name}</p>
+                    <p>$ ${product.price}</p>
+                    <p>${product.description}</p>
+                </div>
+                <div class="action">
+                    <button class="bttn btn-cart" onclick="addToCart(${product.id})">cart</button>
+                    <button class="bttn btn-edit" onclick="editProduct(${product.id})">edit</button>
+                    <button class="bttn btn-del" onclick="deleteProduct(${product.id})">delete</button>  
+                </div>
             </div>
         </div>`;
     });
