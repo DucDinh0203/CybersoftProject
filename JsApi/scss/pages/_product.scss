@@ -13,6 +13,7 @@
                 
                 animation: fadeInDown 1s;
                 animation-fill-mode: both;
+                padding: 10px 10px;
                 img{
                     width: 100%;
                 }
@@ -20,6 +21,9 @@
                 .content{
                     padding: 0px 10px;
                     margin-bottom: 10px;
+                    p{
+                        margin-bottom: 3px;
+                    }
                 }
 
                 .action{
