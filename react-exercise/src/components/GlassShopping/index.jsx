@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import GlassList from './GlassList';
-import MyModel from "./MyModel"
+import MyModel from "./MyModel";
 
 export default class GlassShopping extends Component {
     state = {
