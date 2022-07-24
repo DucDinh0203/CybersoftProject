@@ -5,13 +5,13 @@ export default class ShoeModel extends Component {
     render() {
         return (
             <div className="row">
-            <div className="col-sm-5">
-            <img
-                className="img-fluid"
-                src=""
-                alt="asdasdasd"
-            />
-            </div>
+                <div className="col-sm-5">
+                    <img
+                        className="img-fluid"
+                        src=""
+                        alt="asdasdasd"
+                    />
+                </div>
             <div className="col-sm-7">
             <h3>Thông số kỹ thuật</h3>
             <table className="table">

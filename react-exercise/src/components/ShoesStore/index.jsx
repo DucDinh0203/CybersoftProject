@@ -18,15 +18,13 @@ export default class ShoesStore extends Component {
                     Your Cart ()
                 </button>
             </div>
-
+            
             <ShoeList
             />
-
+            <TheCart/>
             
             <ShoeModel/>
             
-            {/* <TheCart
-            /> */}
 
         </section>
     );

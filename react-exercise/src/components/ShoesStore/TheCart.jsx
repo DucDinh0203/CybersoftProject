@@ -1,39 +1,6 @@
 import React, { Component } from 'react'
 
 export default class TheCart extends Component {
-    renderCartList = () => {
-        const { cartList } = this.props;
-        return cartList.map((cart, index) => {
-          return (
-            <tr className="card-item" key={index}>
-              <td>{cart.maSP}</td>
-              <td>{cart.tenSP}</td>
-              <td>
-                <img src={cart.hinhAnh} width={50} alt="" />
-              </td>
-              <td>
-                <button onClick={() => this.handleChangeQuantity(false, cart.maSP)}>
-                  -
-                </button>
-                {cart.soLuong}
-                <button onClick={() => this.handleChangeQuantity(true, cart.maSP)}>
-                  +
-                </button>
-              </td>
-              <td>{cart.giaBan}</td>
-              <td>{cart.giaBan * cart.soLuong}</td>
-              <td>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => this.props.handleRemove(cart.maSP)}
-                >
-                  Delete
-                </button>
-              </td>
-            </tr>
-          );
-        });
-      };
       
     render() {
     return (
@@ -74,7 +41,7 @@ export default class TheCart extends Component {
                     <th>thành tiền</th>
                   </tr>
                 </thead>
-                <tbody>{this.renderCartList()}</tbody>
+                <tbody></tbody>
               </table>
             </div>
             <div className="modal-footer">
